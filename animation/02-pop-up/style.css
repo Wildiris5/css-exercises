@@ -20,7 +20,7 @@ body {
 button {
   padding: 20px;
   color: #ffffff;
-  background-color: #0e79dd;
+  background-color: rgb(95, 3, 135);
   border: none;
   border-radius: 5px;
   font-weight: 600;
@@ -29,7 +29,7 @@ button {
 .popup-modal {
   padding: 32px 64px;
   background-color: white;
-  border: 1px solid black;
+  border: 5px solid rgb(95, 3, 135);
   border-radius: 10px;
   position: fixed;
   top: 50%;
@@ -39,6 +39,9 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(95, 3, 135);
+  animation: slide-up 400ms ease-in-out;
 }
 
 .popup-modal p {
@@ -49,13 +52,37 @@ button {
   pointer-events: none;
   position: fixed;
   inset: 0;
-  background: #000;
+  background: #ff7dec;
   opacity: 0%;
 }
 
 .popup-modal.show {
-  opacity: 100%;
   pointer-events: all;
+  transform-origin: center;
+  opacity: 100%;
+  animation: slide-down 500ms ease-in-out;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -200%);
+    opacity: 0; 
+  }
 }
 
 .backdrop.show {
