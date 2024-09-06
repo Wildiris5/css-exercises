@@ -10,7 +10,63 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
 }
+
+.plants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+}
+
+.barberry {
+  width: 200px;
+}
+
+.barberry-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.chili {
+  width: 200px;
+}
+
+.chili-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pepper {
+  width: 200px;
+}
+
+.pepper-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.saffron {
+  width: 200px;
+}
+
+.saffron-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+}
+
 
 /* do not edit this footer */
 .footer {
